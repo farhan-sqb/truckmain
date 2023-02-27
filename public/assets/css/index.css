@@ -1,0 +1,142 @@
+.homeBanner{
+    height: auto;
+}
+
+.bannerImage{
+    width: 100%;
+    height: 350px;
+}
+
+
+/* account section design */
+.accountSection{
+    overflow: hidden;
+}
+
+.accountSectionBg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d3557;
+    height: 450px;
+}
+
+.accountSectionImg{
+    background-image: url(../images/truck\ image\ 5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
+    overflow: hidde;
+}
+
+.accountContent .mainHeading{
+    color: #FFFFFF;
+  }
+  
+  .accountContent .subHeading{
+      color: #FFFFFF;
+  }
+
+  .checkMarkIcon p{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+
+
+/* DynamicBanner section design */
+.DynamicBanner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/truck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.DynamicBanner:after{
+   position: absolute;
+   content: "";
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 80vh;
+   background-color: rgba(16, 117, 157, 0.305);
+}
+
+.DynamicBannerContent{
+    padding: 50px 0;
+    z-index: 1;
+}
+
+.DynamicBannerContent .mainHeading{
+    color: #FFFFFF;
+  }
+  
+  .DynamicBannerContent .subHeading{
+      color: #FFFFFF;
+  }
+
+
+  /* Review Section design */
+  .reviewHeading{
+    padding: 0 225px;
+  }
+
+.clientReview{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.singleReview{
+    box-shadow: rgb(90 83 83 / 15%) 0px 1px 1px 2px;
+    padding: 60px 40px;
+    border-radius: 8px;
+}
+
+.singleReview img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+
+@media screen and (max-width: 992px){
+
+    .accountSectionImg{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .accountContent{
+        padding: 60px 0;
+    }
+
+    .accountSectionBg{
+        height: auto;
+    }
+
+    .reviewHeading {
+        padding: 0 100px;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+    .reviewHeading {
+        padding: 0 10px;
+    }
+
+     .DynamicBannerContent {
+        padding: 50px 10px;
+    }
+}

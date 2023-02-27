@@ -1,0 +1,61 @@
+.menuBar {
+    padding: 8px 0;
+}
+
+.workSection{
+    background-color: #1d3557;
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.workInner{
+    padding: 0 200px;
+}
+
+.workSection .mainHeading{
+    color: #FFFFFF;
+}
+
+.workSection .subHeading{
+    color: #FFFFFF;
+}
+
+.createProfile{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.createProfile img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.contentHeading{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .workInner{
+        padding: 0 80px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .workInner{
+        padding: 0 20px;
+    }
+}

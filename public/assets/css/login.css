@@ -1,0 +1,96 @@
+.loginSection {
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.loginSectionInner {
+    width: 100%;
+}
+
+
+.forgotPass a {
+    text-decoration: none;
+}
+
+.passDiviver {
+    position: relative;
+}
+
+
+.googlesignup {
+    background: white;
+    color: black;
+    border: 2px solid #b0adad !important;
+    text-transform: unset;
+}
+
+
+.googleicon {
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
+}
+
+.passDiviver:before {
+    position: absolute;
+    content: "";
+    width: 45%;
+    height: 1px;
+    left: 0;
+    top: 15px;
+    background: rgb(177, 177, 177);
+}
+
+.passDiviver:after {
+    position: absolute;
+    content: "";
+    width: 45%;
+    height: 1px;
+    right: 0;
+    top: 15px;
+    background: rgb(177, 177, 177);
+}
+
+.loginSectionImg {
+    background-image: url(../images/truck\ image\ 4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidde;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.alreadyAccount a {
+    text-decoration: none;
+}
+
+.alreadyAccount a:hover {
+    text-decoration: none;
+}
+
+/* form validate css */
+
+#loginForm label.error {
+    width: auto;
+    display: block;
+    color: #ff002b;
+}
+
+input.error {
+    border: 1px solid #ff002b;
+}
+
+
+@media screen and (max-width: 768px) {
+    .loginSectionImg {
+        display: none;
+    }
+
+    .signUpSectionBg {
+        padding: 20px 0;
+    }
+}

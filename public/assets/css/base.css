@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: #21212121;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6, a{
+    font-family: 'Roboto', sans-serif;
+}
+
+.sectionGap{
+    margin: 60px 0;
+}
+
+
+.mainHeading{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: #414141;
+    margin-bottom: 20px;
+}
+
+.subHeading{
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #6C6D77;
+}
+
+.innerPadding{
+    padding-bottom: 30px;
+}
+
+.customBtn{
+    border: none !important;
+    outline: none !important;
+    background-color: #d90429;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px 40px;
+    margin-top: 20px;
+    transition: 0.5s;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 1px 4px 6px 11px #9d020706;
+    text-decoration: none;
+}
+
+.customBtn:hover{
+    background-color: #ef233c;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.normalBtnWidth{
+    width: 60%;
+}
+
+.signUpBtn{
+    padding: 8px 20px;
+    margin-top: 0;
+}
+
+.fullWidhtBtn{
+    width: 100%;
+}
+
+/* custom navbar desing */
+
+.menuBar {
+    display: grid;
+    grid-template-columns: 150px 1fr 180px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menuBar img{
+    width: 150px;
+    height: 50px;
+}
+
+.navClose{
+    display: none;
+}
+
+.customNav ul li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.customNav ul li:last-child{
+    margin-right: 0; 
+}
+
+.customNav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customNav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 400;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* acive class on highlight anchor visited page*/
+.active, .menuLink:hover {
+    border-bottom: 2px solid #d90429;
+    color: #d90429 !important;
+    font-weight: 500 !important;
+  }
+
+.mobileSignUp{
+    display: none;
+}
+
+.menuClick {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.menuClick i{ 
+   font-size: 20px;
+}
+
+.signUpPart{
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* Get started section design */
+.getStartedSection{
+    background-color: #1d3557;
+    padding: 50px 0;
+}
+
+.getStartedSection .mainHeading{
+    color: #FFFFFF;
+}
+
+
+/* footer design */
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.footerMenu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerMenu ul li{
+    padding-right: 20px;
+}
+
+.footerMenu ul li:last-child{
+    padding-right: 0;
+}
+
+
+.footerMenu ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+@media screen and (max-width: 1200px){
+    .menuBar {
+        display: grid;
+        grid-template-columns: 1fr 180px;
+    }
+
+    .menuClick {
+        opacity: 1;
+        border: 1px solid #6b6b6b;
+        padding: 8px;
+        border-radius: 4px;
+    }
+
+    .menuClick i{
+        z-index: 1;
+    }
+
+    .customNav{
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+        padding: 50px 30px  0;
+        background-color: #1d3557;
+        z-index: 10;
+        transition: 0.5s;
+    }
+
+
+    .customNav.open{
+        left: 0;
+    }
+
+    .navClose{
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+    }
+
+    .navClose i{
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .customNav ul li{
+        padding-bottom: 10px;
+    }
+    
+    .customNav ul li:last-child{
+        padding-bottom: 0;
+    }
+    
+    .customNav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline !important;
+    }
+    
+    .customNav ul li a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .signUpBtn{
+        margin-top: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 992px){
+    .mainHeading{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    
+    .subHeading{
+        font-size: 18px;
+    }
+    
+    .customBtn{
+        padding: 10px 30px;
+    }
+    
+    .signUpBtn{
+        margin-top: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+    .sectionGap{
+        margin: 50px 0;
+    }
+
+    .mainHeading{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .subHeading{
+        font-size: 17px;
+    }
+    
+    .customBtn{
+        padding: 8px 25px;
+    }
+    
+    .signUpBtn{
+        margin-top: 0;
+    }
+
+    .mobileSignUp{
+        display: block;
+    }
+
+    
+    .signUpPartBtn{
+        display: none;
+    }
+
+    .menuClick {
+        padding: 5px 8px;
+        border-radius: 4px;
+
+    }
+
+    .footerContent{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footerMenu{
+        margin-top: 10px;
+    }
+
+}

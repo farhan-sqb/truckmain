@@ -1,0 +1,200 @@
+.mediumFont {
+    font-size: 32px;
+}
+
+.accordionPart {
+    padding: 0 200px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.4s;
+    border-radius: 4px;
+    position: relative;
+}
+
+.activeAccordion,
+.accordion:hover {
+    background-color: rgb(255, 255, 255);
+    color: #d90429;
+}
+
+.accordion:after {
+    position: absolute;
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    right: 15px;
+    top: 20px;
+    margin-left: 10px;
+}
+
+.activeAccordion:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 8px;
+    border-radius: 0 0 4px 4px;
+}
+
+.panel p {
+    padding: 0 0 20px;
+}
+
+button {
+    border: none !important;
+    outline: none !important;
+}
+
+.contactMore {
+    padding: 0 280px;
+}
+
+.singleBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 1px 1px -1px #1b1a1a;
+    height: 100%;
+}
+
+.singleBox i {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #d90429;
+    ;
+}
+
+.singleBox small {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.phoneNumber,
+.mail {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(28, 28, 28);
+}
+
+.phoneNumber:hover,
+.mail:hover {
+    text-decoration: none;
+    color: #444;
+}
+
+.contactSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0 200px;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 1px -1px #1b1a1a;
+}
+
+.customInput {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    background: rgb(184 184 184 / 12%);
+}
+
+.mediumWidth {
+    width: 45%;
+}
+
+.customInput:focus {
+    border: 1px solid #d90429;
+}
+
+::placeholder {
+    color: #00000365;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#contactForm small {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+#contactForm label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#contactForm label.error {
+    width: auto;
+    display: block;
+    color: #ff002b;
+}
+
+input.error {
+    border: 1px solid #ff002b;
+}
+
+
+textarea.error {
+    border: 1px solid #ff002b;
+}
+
+
+@media screen and (max-width: 992px) {
+    .accordionPart {
+        padding: 0 10px;
+    }
+
+    .contactMore {
+        padding: 0 80px;
+    }
+
+    .contactSection {
+        margin: 0 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactMore {
+        padding: 0 20px;
+    }
+
+    .contactSection {
+        margin: 0 10px;
+    }
+
+    .mediumWidth {
+        width: 100%;
+    }
+}

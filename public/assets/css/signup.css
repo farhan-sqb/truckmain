@@ -1,0 +1,196 @@
+.formPart {
+    background-color: #ffffff;
+}
+
+
+.mainHeading {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* signUp section */
+.backHome a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #d90429;
+}
+
+.backHome i {
+    font-size: 18px;
+    color: #d90429;
+}
+
+.signUpSection {
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.signUpSectionBg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.signUpSectionImg {
+    background-image: url(../images/truck\ image\ 5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidde;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+
+.customInput {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 4px;
+    background: rgb(184 184 184 / 12%);
+}
+
+.customInput:focus {
+    border: 1px solid #d90429;
+}
+
+::placeholder {
+    color: #00000365;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.passField {
+    position: relative;
+}
+
+.showHidePass {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+}
+
+.showHidePass i {
+    font-size: 20px;
+}
+
+.fa-eye-slash {
+    color: rgb(102, 102, 102);
+}
+
+.fullwidthInput {
+    width: 100%;
+    padding: 12px;
+}
+
+.leftRightDiviver {
+    position: relative;
+}
+
+
+.leftRightDiviver:before {
+    position: absolute;
+    content: "";
+    width: 39%;
+    height: 1px;
+    left: 0;
+    top: 12px;
+    background: rgb(177, 177, 177);
+}
+
+.leftRightDiviver:after {
+    position: absolute;
+    content: "";
+    width: 39%;
+    height: 1px;
+    right: 0;
+    top: 12px;
+    background: rgb(177, 177, 177);
+}
+
+.signUpWithGoogle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 4px;
+}
+
+.signUpWithGoogle {
+    text-decoration: none;
+    color: #000;
+}
+
+.signUpWithGoogle:hover {
+    text-decoration: none;
+}
+
+.signUpWithGoogle h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.alreadyAccount a {
+    text-decoration: none;
+}
+
+.alreadyAccount a:hover {
+    text-decoration: none;
+}
+
+
+/* form validate css */
+
+#signUpForm label.error {
+    width: auto;
+    display: block;
+    color: #ff002b;
+}
+
+input.error {
+    border: 1px solid #ff002b;
+}
+
+
+.googlesignup {
+    background: white;
+    color: black;
+    border: 2px solid #b0adad !important;
+    text-transform: unset;
+}
+
+
+.googleicon {
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .signUpSectionImg {
+        display: none;
+    }
+
+    .signUpSectionBg {
+        padding: 20px 0;
+    }
+
+    .customBtn {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+}

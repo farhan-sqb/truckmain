@@ -1,0 +1,196 @@
+.credentialActivate {
+    background: #ff3447;
+    color: #fff !important;
+}
+
+.header-button {
+    width: auto;
+}
+
+
+.detailHeader {
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.details {
+    margin-bottom: 15px;
+}
+
+.users_description {
+    white-space: pre-wrap;
+    font-family: arial;
+    font-size: 15px;
+}
+
+#modalProfileImage {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(37, 37, 37);
+}
+
+
+.rssImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: black;
+}
+
+.subcats {
+    margin-left: 25px;
+    list-style: decimal;
+}
+
+
+
+#mainForm {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #00000073;
+    margin: 25px auto;
+}
+
+#formLabels {
+    display: flex;
+}
+
+.labels {
+    background: white;
+    padding: 10px 30px;
+    border: 1px solid #5b5b5b;
+    width: inherit;
+    text-transform: uppercase;
+}
+
+.labels.activated {
+    background: #0c1c31;
+    color: white;
+    font-weight: bold;
+}
+
+.customlabel {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 10px;
+    top: -8px;
+    position: relative;
+}
+
+
+
+#allTruckOptions {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+
+.truckName {
+    position: absolute;
+    top: 10px;
+}
+
+
+.truckDiv {
+    width: 300px;
+    box-shadow: 0px 0px 10px 0px #828282;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 600;
+    color: #0b9bc8;
+    cursor: pointer;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+
+#restVehicleForm {
+    margin-top: 3rem;
+}
+
+.border {
+    padding: 10px;
+}
+
+.transportname {
+    text-transform: capitalize;
+}
+
+
+#newDriver {
+    margin-top: 25px;
+    border-top: 2px solid black;
+    padding-top: 30px;
+}
+
+.labeledFreights {
+    background-color: #fff;
+    color: black;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 5px 0px #606060;
+    padding: 10px 40px;
+}
+
+.labeledFreights:focus {
+    background-color: tomato;
+}
+
+
+
+
+
+.insurancecard {
+    padding: 10px 15px;
+    box-shadow: 0px 0px 10px 0px #082c37;
+    font-size: 0.9rem;
+    background: #0c1c31;
+    color: white;
+    font-weight: 700;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.insurancecard:hover {
+    color: white !important;
+}
+
+.valueType {
+    float: right;
+    position: relative;
+    text-transform: capitalize;
+}
+
+
+.linehr {
+    border: 2px solid white;
+    padding: 15px 20px;
+}
+
+
+
+.uppercased {
+    text-transform: uppercase;
+}
+
+.vehicleUpImage {
+    width: 250px;
+    height: auto;
+    margin: 25px auto;
+}
+
+.truckDiv.outlined {
+    border: 3px solid #0a74ff;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    #formLabels {
+        display: block !important;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Design based on Blue Login Field of Kevin Sleger https://codepen.io/MurmeltierS/pen/macKb */
+
+        body {
+            background: #44c4e7 url("https://photos-6.dropbox.com/t/2/AAC_bdqR8LMkjEe-HPIf4K1DhtseMLRHPklBSzJSuzglvA/12/5714737/jpeg/1024x768/3/1418346000/0/2/bkg-blur.jpg/CLHm3AIgASgBKAI/b7RrveA2022yJyfO9RyRvv7LjJQESukGHssHUxVThzw") no-repeat center center fixed;
+            background-size: cover;
+            font-family: "Roboto";
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background: #fff;
+            width: 285px;
+            margin: -140px 0 0 -182px;
+            padding: 40px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+        }
+
+        input {
+            outline: none;
+            display: block;
+            width: 100%;
+            margin: 0 0 20px;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            color: #ccc;
+            font-family: "Roboto";
+            box-sizing: border-box;
+            font-size: 14px;
+            font-wieght: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transition: 0.2s linear;
+
+
+        }
+
+        button {
+            cursor: pointer;
+            background: #44c4e7;
+            width: 100%;
+            padding: 10px 15px;
+            border: 0;
+            color: #fff;
+            font-family: "Roboto";
+            font-size: 14px;
+            font-weight: 400;
+
+
+        }
+
+        .error,
+        .valid {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Correct username: invitado / pass: hgm2015-->
+
+    <section class="form animated flipInX">
+        <h2>Login To Your Account</h2>
+        <p class="valid">Valid. Please wait a moment.</p>
+        <p class="error">Error. Please enter correct Username &amp; password.</p>
+        <form class="loginbox" autocomplete="off">
+            <input placeholder="Username" type="text" id="username"></input>
+            <input placeholder="Password" type="password" id="password"></input>
+            <button id="submit">Login</button>
+        </form>
+    </section>
+
+
+    <script>
+        $(document).ready(function () {
+            //$('#username').focus();
+
+            $('#submit').click(function () {
+
+                event.preventDefault(); // prevent PageReLoad
+
+                var ValidEmail = $('#username').val() === 'invitado'; // User validate
+                var ValidPassword = $('#password').val() === 'hgm2015'; // Password validate
+
+                if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
+                    $('.valid').css('display', 'block');
+                    window.location = "http://arkev.com"; // go to home.html
+                }
+                else {
+                    $('.error').css('display', 'block'); // show error msg
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

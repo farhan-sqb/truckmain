@@ -1,0 +1,159 @@
+.articleHeroSection {
+    background-image: url(../images/truck\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.articleHeroSection:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(56, 0, 32, 0.57);
+}
+
+
+.articleHeroSectionContent .mainHeading {
+    color: #FFFFFF;
+}
+
+.articleHeroSectionContent {
+    padding-right: 300px;
+}
+
+.blogWritterBio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.blogWritterBio img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.blogWritterBio a {
+    text-decoration: none;
+}
+
+.blogWritterBio a i {
+    font-size: 30px;
+    color: rgb(53, 53, 53);
+}
+
+.bioDetailsContent p {
+    margin-bottom: 0px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+}
+
+
+.blogMainThought {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.blogTopicTitle {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.singleBlogPost {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 7px 2px #77777752;
+    margin-bottom: 15px;
+}
+
+.blogContent {
+    padding: 20px 20px 00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blogDes {
+    margin-top: 10px;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.innerBlogContent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.innerBlogContent .blogImage {
+    width: 500px;
+    max-height: 350px;
+}
+
+.innerBlogContent {
+    text-decoration: none;
+    color: #000;
+}
+
+.innerBlogContent:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.innerBlogContent .blogTitle {
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .articleHeroSectionContent {
+        padding-right: 100px;
+    }
+
+    .innerBlogContent {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .innerBlogContent .blogImage {
+        width: 100%;
+        max-height: 250px;
+        border-radius: 8px 0 0 0;
+    }
+
+    .blogContent {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .articleHeroSectionContent {
+        padding-right: 0;
+    }
+
+    .blogWritterBio a i {
+        font-size: 20px;
+    }
+
+    .blogMainThought {
+        font-size: 20px;
+    }
+
+    .blogTopicTitle {
+        font-size: 18px;
+    }
+
+}

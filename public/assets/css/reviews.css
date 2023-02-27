@@ -1,0 +1,139 @@
+.menuBar {
+    padding: 8px 0;
+}
+
+.reviewSection {
+    background-color: #1d3557;
+    padding: 60px 0px;
+    text-align: center;
+}
+
+.singleReview {
+    box-shadow: unset;
+}
+
+.reviewContent {
+    padding: 0px 175px;
+}
+
+.reviewSection .mainHeading {
+    color: #FFFFFF;
+}
+
+.reviewSection .subHeading {
+    color: #FFFFFF;
+}
+
+.singleReview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 130px;
+}
+
+.singleReview img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #1d3557;
+}
+
+
+.clientReview blockquote {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+blockquote:after,
+blockquote:before {
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: 70px;
+    line-height: 1;
+}
+
+blockquote:before {
+    float: right;
+    top: 20px;
+    left: 20px;
+    content: "\201C";
+}
+
+blockquote:after {
+    right: 30px;
+    bottom: 0;
+    content: "\201D";
+}
+
+.clientReview {
+    background-color: #FFFFFF;
+    padding: 40px 60px;
+    position: relative;
+    margin-left: 40px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 9px 4px #c1c1c1;
+}
+
+.leftArrow {
+    position: relative;
+}
+
+.leftArrow::before {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    top: 50%;
+    left: 0;
+    margin-left: -25px;
+    content: "";
+    transform: rotate(45deg);
+    margin-top: -25px;
+    background: #fff;
+}
+
+.rightArrow {
+    position: relative;
+    margin-right: 40px;
+}
+
+.rightArrow::after {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    top: 50%;
+    right: 0;
+    margin-right: -25px;
+    content: "";
+    transform: rotate(45deg);
+    margin-top: -25px;
+    background: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .reviewContent {
+        padding: 0px 175px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .reviewContent {
+        padding: 0px 50px;
+    }
+
+    .singleReview {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reviewContent {
+        padding: 0px 20px;
+    }
+
+    .singleReview {
+        padding: 0 10px;
+    }
+}
